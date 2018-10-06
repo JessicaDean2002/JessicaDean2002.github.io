@@ -1,0 +1,10 @@
+body {
+background-image: url('https://imgc.allpostersimages.com/img/print/posters/bill-bachmann-ruins-of-the-coliseum-rome-italy_a-G-3149246-4990619.jpg');
+background-repeat: no-repeat;
+}
+
+.jumbotron {
+text-align: center;
+margin-top: 125px;
+font-family: Georgia, serif;
+}
