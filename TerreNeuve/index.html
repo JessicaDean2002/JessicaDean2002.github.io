@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Jessica's Homepage</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Jessica's Homepage</h1>
-    <p>Under Construction! Check back soon!</p>
-  </div>
-  </div>
+<h2 class="w3-center">Un diaporama de Terre-Neuve et Labrador</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="IMG_2879.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2880.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2881.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2882.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2883.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2884.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2885.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2886.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2887.PNG" style="width:100%">
+  <img class="mySlides" src="IMG_2888.PNG" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);
+}
+</script>
 
 </body>
 </html>
